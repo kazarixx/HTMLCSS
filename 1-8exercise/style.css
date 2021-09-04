@@ -3,5 +3,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
+}
+
+main{
+  width: 960px;
+  margin: 50px auto;
+}
+
+.list{
+  color: gray;
+  margin-bottom: 50px;
+}
+
+.item{
+  padding: 20px;
+  list-style: none;
+}
+
+.item:nth-child(odd){
+  background-color: lightgray;
+}
+/* リスト終 */
+
+/* 四角群始まり */
+.box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square{
+  height: 200px;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  background-color: yellow;
+}
+
+.square:nth-child(1),
+.square:nth-child(5),
+.square:nth-child(9){
+  background-color: orange;
+}
+
+.square:nth-child(3n){
+  margin-right: 0%;
+}
+
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9){
+  margin-bottom: 0;
 }
